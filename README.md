@@ -1,2 +1,2 @@
-# rest_spring_boot_kotlin
+# rest_springboot_kotlin
 REST API utilizando Spring Boot e Kotlin.
