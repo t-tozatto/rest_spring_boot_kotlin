@@ -12,7 +12,7 @@ import kotlin.math.sqrt
 class MathController {
     @RequestMapping(value = ["/sum/{numberOne}/{numberTwo}"])
     fun sum(@PathVariable(value="numberOne") numberOne: Double,
-                 @PathVariable(value="numberTwo") numberTwo: Double): Double {
+            @PathVariable(value="numberTwo") numberTwo: Double): Double {
         return SimpleMath.sum(numberOne, numberTwo)
     }
 
@@ -30,13 +30,13 @@ class MathController {
 
     @RequestMapping(value = ["/divide/{numberOne}/{numberTwo}"])
     fun divide(@PathVariable(value="numberOne") numberOne: Double,
-                 @PathVariable(value="numberTwo") numberTwo: Double): Double {
+               @PathVariable(value="numberTwo") numberTwo: Double): Double {
         return SimpleMath.divide(numberOne, numberTwo)
     }
 
     @RequestMapping(value = ["/avg/{numberOne}/{numberTwo}"])
     fun avg(@PathVariable(value="numberOne") numberOne: Double,
-               @PathVariable(value="numberTwo") numberTwo: Double): Double {
+            @PathVariable(value="numberTwo") numberTwo: Double): Double {
         return SimpleMath.avg(numberOne, numberTwo)
     }
 
